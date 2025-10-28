@@ -76,9 +76,18 @@ Use System Restore to revert to a working configuration. If that fails:
 - Test your SSD/HDD using tools like CrystalDiskInfo
 - Replace storage devices if errors persist
 
-### 10.
-```md
+## 📥 Download the Fix Script
+
+Click below to download the latest version of the PowerShell auto-repair script for the `INACCESSIBLE_BOOT_DEVICE` BSOD error:
+
+[⬇️ Download Fix-InaccessibleBootDevice.ps1](https://github.com/bootdevice/INACCESSIBLE_BOOT_DEVICE-inaccessible-boot-device/releases/download/v1.0.0/Fix-InaccessibleBootDevice.ps1)
+
+Or check all versions [on the Releases page](https://github.com/bootdevice/INACCESSIBLE_BOOT_DEVICE-inaccessible-boot-device/releases)
+
+---
+
 ![Downloads](https://img.shields.io/github/downloads/bootdevice/INACCESSIBLE_BOOT_DEVICE-inaccessible-boot-device/Fix-InaccessibleBootDevice.ps1/total?label=script%20downloads)
+
 
 ---
 
