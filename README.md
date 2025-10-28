@@ -76,6 +76,10 @@ Use System Restore to revert to a working configuration. If that fails:
 - Test your SSD/HDD using tools like CrystalDiskInfo
 - Replace storage devices if errors persist
 
+### 10.
+```md
+![Downloads](https://img.shields.io/github/downloads/bootdevice/INACCESSIBLE_BOOT_DEVICE-inaccessible-boot-device/Fix-InaccessibleBootDevice.ps1/total?label=script%20downloads)
+
 ---
 
 ## 🔄 Summary
