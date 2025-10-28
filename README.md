@@ -76,6 +76,56 @@ Use System Restore to revert to a working configuration. If that fails:
 - Test your SSD/HDD using tools like CrystalDiskInfo
 - Replace storage devices if errors persist
 
+
+
+
+
+## 📘 How to Use the Fix Script for `INACCESSIBLE_BOOT_DEVICE` (BSOD)
+
+If you're experiencing the **INACCESSIBLE_BOOT_DEVICE** blue screen (BSOD) on Windows 10/11, use the PowerShell script below to automatically attempt a fix. The script performs bootloader recovery, disk checks, and system file repairs.
+
+> ✅ **SEO Keywords**: fix inaccessible boot device, Windows BSOD, boot error recovery, bootrec repair, Windows 10 boot fix, PowerShell recovery script, bootloader repair
+
+---
+
+### 🛠 Script Overview
+
+The script will:
+- Rebuild the MBR and BCD boot configuration
+- Run `chkdsk` to scan for drive errors
+- Use `sfc` and `DISM` to fix corrupted system files
+- Output a full diagnostic log to `C:\FixBootDevice_Log.txt`
+
+---
+
+### ⚙️ How to Run the Script
+
+1. **Boot into Windows Recovery Environment (WinRE)**  
+   - You can access it using a Windows installation USB or by holding `Shift + Restart`.
+
+2. **Open PowerShell (or Command Prompt)**  
+   - Go to “Advanced Options” → “Command Prompt”
+
+3. **Copy the script to a flash drive or second partition (e.g. D:)**
+
+4. **Run the script from PowerShell:**
+   ```powershell
+   Set-ExecutionPolicy Bypass -Scope Process -Force
+   .\Fix-InaccessibleBootDevice.ps1
+   
+**Wait for all steps to complete**
+The script may take 5–10 minutes. Check the output in PowerShell and the full log at:
+
+C:\FixBootDevice_Log.txt
+**📄 Notes**
+
+You must run the script as Administrator
+
+It is recommended to use this script from WinRE or a Live USB 
+
+If the error persists, check your BIOS storage mode (AHCI/RAID) and try restoring Windows using System Restore
+
+
 ## 📥 Download the Fix Script
 
 Click below to download the latest version of the PowerShell auto-repair script for the `INACCESSIBLE_BOOT_DEVICE` BSOD error:
